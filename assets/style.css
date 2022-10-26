@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family:Helvetica, Arial, sans-serif;
+    background-color: #333940;
+    color:white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color:#ff66ff;
+  }
+
+.intro {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    margin: 10px 0;
+  }
+
+main {
+    max-width:1000px;
+    margin: 0 auto;
+    display:flex;
+}
+
+  section p {
+    color:#ff66ff;
+    font-size: 0.8em;
+    line-height:1.6em;
+    margin: 10px 0;
+  }
+
+  section {
+    border-style:dashed;
+  }
