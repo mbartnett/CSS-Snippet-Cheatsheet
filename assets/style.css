@@ -4,35 +4,50 @@
     box-sizing: border-box;
   }
 
-  body {
+body {
     font-family:Helvetica, Arial, sans-serif;
     background-color: #333940;
     color:white;
-  }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    color:#ff66ff;
-  }
+h1, h2, h3, h4, h5, h6 {
+    color:#e867ed;
+}
+
+.box-heading {
+    border: 2px solid white;
+    border-radius:8px;
+    margin:-20px 0 0 0 ;
+    padding:5px;
+}
 
 .intro {
     font-size: 0.8em;
     line-height: 1.6em;
     margin: 10px 0;
-  }
-
-main {
-    max-width:1000px;
-    margin: 0 auto;
-    display:flex;
 }
 
-  section p {
-    color:#ff66ff;
+main {
+    max-width:1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+section p {
+    color:#e867ed;
     font-size: 0.8em;
     line-height:1.6em;
     margin: 10px 0;
-  }
+}
 
-  section {
+section {
     border-style:dashed;
-  }
+}
+
+pre {
+    background-image: linear-gradient(to bottom,
+    rgba(112, 73, 121),
+    rgba(158, 84, 164)
+    );
+}
