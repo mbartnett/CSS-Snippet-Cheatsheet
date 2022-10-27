@@ -1,4 +1,4 @@
-/* TOP LEVEL */
+/* universal elements */
 
 * {
     margin: 0;
@@ -26,23 +26,25 @@ header, footer {
 .intro {
     font-size: 0.8em;
     line-height: 1.6em;
-    margin: 10px 0 45px;
+    margin: 10px 0 35px;
 }
 
-/* MAIN SECTION */
+/* main section */
 
 main {
     display:flex;
     flex-wrap:wrap;
-    /*justify-content: space-evenly;*/
+    justify-content: center;
+    flex-grow:1 0 auto;
     margin:20px;   
 }
 
 section {
     border: 1.5px dashed white;
-    margin:0 auto 25px;
+    margin:20px auto;
     padding:10px;
-    width:33%;
+    width:31%;
+    height:100%; /* trying to make the gradient and boxes the same height */
 }
 
 section p {
@@ -53,31 +55,28 @@ section p {
 }
 
 .box-heading {
-    /*position:relative;
-    top:-30px;*/
+    background-color: #333940;
     border: 2px solid white;
     border-radius:8px;
     margin:-30px 0 0 0 ;
     padding:5px;
 }
 
-/* CODE */
+/* code snippets */
 
-/* add glowy animation to hover on border */
+/* need to add glowy animation to hover on border */
 
 pre {
-    background-image: linear-gradient(to bottom,
+    white-space: pre-wrap;
+    background-image: linear-gradient(
     rgba(112, 73, 121),
     rgba(158, 84, 164)
     );
-    border-radius:8px;    
+    border-radius:8px;
+    padding:10px;
 }
 
-code {
-    user-select: auto;
-}
-
-/* MEDIA QUERIES */
+/* media queries */
 
 @media screen and (max-width: 992px) {
     section {
