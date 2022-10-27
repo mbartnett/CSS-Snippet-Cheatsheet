@@ -26,24 +26,21 @@ header, footer {
 .intro {
     font-size: 0.8em;
     line-height: 1.6em;
-    margin: 10px 0;
+    margin: 10px 0 45px;
 }
 
-/* MAIN SECTIONS */
+/* MAIN SECTION */
 
 main {
-    /*max-width:1200px;*/
-    margin: 0 auto;
     display:flex;
-    flex-wrap:wrap;
-    align-items: center;
+    flex-wrap:wrap;   
 }
 
 section {
     border: 1.5px dashed white;
-    margin:10px;
+    margin:10px auto 25px;
     padding:10px;
-    width:33%;        
+    width:33%;
 }
 
 section p {
@@ -51,16 +48,19 @@ section p {
     font-size: 0.8em;
     line-height:1.6em;
     margin: 10px 0;
+    overflow-wrap:break-word;
 }
 
 .box-heading {
+    position:relative;
     border: 2px solid white;
     border-radius:8px;
     margin:-30px 0 0 0 ;
     padding:5px;
-    width:100%;
-    z-index:2;    
+    width:100%;         
 }
+
+/* CODE */
 
 pre {
     background-image: linear-gradient(to bottom,
@@ -69,8 +69,10 @@ pre {
     );
     border-radius:8px;
     padding:10px;
-    
 }
 
+code {
+    user-select: auto;
+}
 
-
+/* MEDIA QUERIES */
