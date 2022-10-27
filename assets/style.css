@@ -1,4 +1,8 @@
 /* universal elements */
+:root {
+    --purple: #e867ed;
+    --gray: #333940;
+}
 
 * {
     margin: 0;
@@ -8,12 +12,12 @@
 
 body {
     font-family:Helvetica, Arial, sans-serif;
-    background-color: #333940;
+    background-color: var(--gray);
     color:white;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color:#e867ed;
+    color:var(--purple);
 }
 
 /* HEADER */
@@ -28,41 +32,6 @@ header, footer {
     line-height: 1.6em;
     margin: 10px 0 35px;
 }
-
-/* experiement with gradient fill
-
-.experiment {
-display:flex;
-flex-direction:column;
-flex-wrap:nowrap;
-flex-basis:50%;
-height:300px;
-border: 1.5px dashed white;
-}
-
-.head {
-    background-color: #333940;
-    border: 2px solid white;
-    border-radius:8px;
-    width:90%;
-    margin:-5% auto 2.5%;
-    }
-
-.graph {
-background-color:#333940;
-height:12%;
-}
-
-.gradient {
-    height:80%;
-    background-image: repeating-linear-gradient(
-        rgba(112, 73, 121),
-        rgba(158, 84, 164)
-        );
-        justify-content: center;
-}
-
-*/
 
 /* main section */
 
@@ -79,7 +48,7 @@ section {
     border: 1.5px dashed white;
     margin:20px auto;
     padding:10px;
-    width:31%;    
+    width:31%;
 }
 
 section p {
@@ -90,7 +59,7 @@ section p {
 }
 
 .box-heading {
-    background-color: #333940;
+    background-color: var(--gray);
     border: 2px solid white;
     border-radius:8px;
     margin:-30px 0 0 0 ;
@@ -102,15 +71,14 @@ section p {
 
 pre {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    flex-wrap: nowrap;
     height:200%;
-    padding-bottom:2.5%
-    
+    user-select: all; 
 }
 
 code {
+    display:flex;
+    align-items: center;
     font-family:'Courier New', Courier, monospace;
     font-size:.8em;
     white-space: pre-wrap;
@@ -120,7 +88,7 @@ code {
     rgba(158, 84, 164)
     );
     border-radius:8px;
-    padding:10px;
+    padding:1.5%;
 }
 
 /* media queries */
