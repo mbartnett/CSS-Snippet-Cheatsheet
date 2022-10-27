@@ -1,4 +1,4 @@
-/* universal elements */
+/* top-level styles */
 :root {
     --purple: #e867ed;
     --gray: #333940;
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     color:var(--purple);
 }
 
-/* HEADER */
+/* header & footer */
 
 header, footer {
     margin: 2.5% 16%;
@@ -33,7 +33,7 @@ header, footer {
     margin: 10px 0 35px;
 }
 
-/* main section */
+/* main */
 
 main {
     display: flex;
@@ -51,28 +51,27 @@ section {
     width:31%;
 }
 
-section p {
-    color:#e867ed;
-    font-size: 0.8em;
-    line-height:1.6em;
-    margin: 2.5% 0;       
-}
-
-.box-heading {
+section .box-heading {
     background-color: var(--gray);
-    border: 2px solid white;
+    border: 1.5px solid white;
     border-radius:8px;
     margin:-30px 0 0 0 ;
     padding:5px;
 }
 
-/* code snippets */
+section p {
+    color:var(--purple);
+    font-size: 0.8em;
+    line-height:1.6em;
+    margin: 2.5% 0;       
+}
 
+/* code snippets */
 
 pre {
     display:flex;
     flex-wrap: nowrap;
-    height:200%;
+    flex-basis:100%;
     user-select: all; 
 }
 
