@@ -29,36 +29,64 @@ header, footer {
     margin: 10px 0 35px;
 }
 
+/* experiement with gradient fill
+
+.experiment {
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap;
+flex-basis:50%;
+height:300px;
+border: 1.5px dashed white;
+}
+
+.head {
+    background-color: #333940;
+    border: 2px solid white;
+    border-radius:8px;
+    width:90%;
+    margin:-5% auto 2.5%;
+    }
+
+.graph {
+background-color:#333940;
+height:12%;
+}
+
+.gradient {
+    height:80%;
+    background-image: repeating-linear-gradient(
+        rgba(112, 73, 121),
+        rgba(158, 84, 164)
+        );
+        justify-content: center;
+}
+
+*/
+
 /* main section */
 
 main {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    flex:1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     margin:20px;   
 }
 
 section {
-    /*display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    flex-basis: auto;
-    */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     border: 1.5px dashed white;
     margin:20px auto;
     padding:10px;
-    flex-basis:31%;
-    /*height:100%; 
-    
-    trying to make the gradient and boxes the same height */
+    width:31%;    
 }
 
 section p {
     color:#e867ed;
     font-size: 0.8em;
-    /*line-height:1.6em;*/
-    margin: 10px 0;
+    line-height:1.6em;
+    margin: 2.5% 0;       
 }
 
 .box-heading {
@@ -71,17 +99,22 @@ section p {
 
 /* code snippets */
 
-/* need to add glowy animation to hover on border */
 
 pre {
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height:200%;
+    padding-bottom:2.5%
+    
 }
 
 code {
     font-family:'Courier New', Courier, monospace;
     font-size:.8em;
-    flex-basis:100%;
     white-space: pre-wrap;
+    flex-basis:100%;
     background-image: linear-gradient(
     rgba(112, 73, 121),
     rgba(158, 84, 164)
