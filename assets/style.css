@@ -33,7 +33,7 @@ header, footer {
     margin: 10px 0 35px;
 }
 
-/* main */
+/* main content */
 
 main {
     display: flex;
@@ -69,7 +69,7 @@ section p {
     margin: 2.5% 0;
 }
     
-/*hover glow */
+/* hover box shadow */
 
 section:hover,
 section:hover .box-heading {
@@ -78,7 +78,7 @@ section:hover .box-heading {
  rgba(232, 102, 236, 1);
  }
 
-/* code snippets */
+/* code elements */
 
 pre {
     display:flex;
@@ -101,20 +101,6 @@ code {
     border-radius:8px;
     padding:1.5%;
 }
-
-.code-card .card-header {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-
-    out;
- }
- 
- .code-card:hover,
- .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px
- rgba(232, 102, 236, 1), 0 0 15px
- rgba(232, 102, 236, 1);
- }
- 
 
 /* media queries */
 
