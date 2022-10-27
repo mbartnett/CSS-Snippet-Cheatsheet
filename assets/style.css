@@ -35,22 +35,29 @@ main {
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    flex-grow:1 0 auto;
+    flex:1 0 auto;
     margin:20px;   
 }
 
 section {
+    /*display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex-basis: auto;
+    */
     border: 1.5px dashed white;
     margin:20px auto;
     padding:10px;
-    width:31%;
-    height:100%; /* trying to make the gradient and boxes the same height */
+    flex-basis:31%;
+    /*height:100%; 
+    
+    trying to make the gradient and boxes the same height */
 }
 
 section p {
     color:#e867ed;
     font-size: 0.8em;
-    line-height:1.6em;
+    /*line-height:1.6em;*/
     margin: 10px 0;
 }
 
@@ -67,25 +74,32 @@ section p {
 /* need to add glowy animation to hover on border */
 
 pre {
+    display:flex;
+}
+
+code {
+    font-family:'Courier New', Courier, monospace;
+    font-size:.8em;
+    flex-basis:100%;
     white-space: pre-wrap;
     background-image: linear-gradient(
     rgba(112, 73, 121),
     rgba(158, 84, 164)
     );
     border-radius:8px;
-    padding:10px;
+    padding:10px;*/ 
 }
 
 /* media queries */
 
 @media screen and (max-width: 992px) {
     section {
-        width:45%;
+        flex-basis:45%;
     }
 }
 
 @media screen and (max-width: 768px) {
     section {
-        width:90%;
+        flex-basis:90%;
     }
 }
