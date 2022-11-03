@@ -7,8 +7,8 @@ This webpage holds a collection of CSS snippets, and was intended to test my abi
 
 ## Links
 
-[**Week Two Mini-Project**](https://mbartnett.github.io/week-2-mini-project/)<br>
-[**Week Two Mini-Project Repo**](https://github.com/mbartnett/week-2-mini-project)
+[**Week Two Mini-Project**](https://mbartnett.github.io/CSS-Snippet-Cheatsheet/)<br>
+[**Week Two Mini-Project Repo**](https://github.com/mbartnett/CSS-Snippet-Cheatsheet)
 
 ## Screengrabs
 
